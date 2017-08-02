@@ -1,0 +1,19 @@
+.slide-div {
+    width: 440px;
+    height: 260px;
+    overflow: hidden;
+    .slide-enter {
+        opacity: 0.01;
+        &.slide-enter-active {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+    }
+    .slide-leave {
+        opacity: 1;
+        &.slide-leave-active {
+            opacity: 0.01;
+            transition: opacity 1s ease-in-out;
+        }
+    }
+}
